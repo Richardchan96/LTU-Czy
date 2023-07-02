@@ -39,11 +39,8 @@ We also provide [PyTorch version](https://github.com/thstkdgus35/EDSR-PyTorch) o
 ## Model Architecture
 **EDSR** (Single-scale model. We provide scale x2, x3, x4 models).
 
-![EDSR](/figs/EDSR.png)
-
 **MDSR** (Multi-scale model. It can handle x2, x3, x4 super-resolution in a single model).
 
-![MDSR](/figs/MDSR.png)
 
 Note that the MDSR architecture for the challenge and for the paper[1] is slightly different.
 During the challenge, MDSR had variation between two challenge tracks. While we had scale-specific feature extraction modules for track 2:unknown downscaling, we didn't use the scale-specific modules for track 1:bicubic downscaling.
@@ -52,13 +49,6 @@ During the challenge, MDSR had variation between two challenge tracks. While we 
 
 ## NTIRE2017 Super-resolution Challenge Results
 
-We proposed 2 methods and they won the 1st (EDSR) and 2nd (MDSR) place.
-
-![Challenge_result](/figs/Challenge_result.png)
-
-We have also compared the super-resolution performance of our models with previous state-of-the-art methods.
-
-![Paper_result](/figs/paper_result.png)
 
 # About our code
 ## Dependencies
@@ -329,51 +319,3 @@ You can also use .png files too. Please see below **Training** section for the d
     <U>Some model may require pre-trained **bicubic scale 2** or **bicubic multiscale** model.</U> Here, we assume that you already downloaded `bicubic_x2.t7` and `bicubic_multiscale.t7` in the `NTIRE2017/demo/model` directory. Otherwise, you can create them yourself. It is also possible to start the traning from scratch by removing `-preTrained` option in `training.sh`.
 
 <br>
-
-# Results
-
-![result_1](/figs/result/result_1.jpg)
-
-![result_2](/figs/result/result_2.jpg)
-
-![result_3](/figs/result/result_3.jpg)
-
-![result_4](/figs/result/result_4.jpg)
-
-![result_5](/figs/result/result_5.jpg)
-
-![result_6](/figs/result/result_6.jpg)
-
-![result_7](/figs/result/result_7.jpg)
-
-![result_8](/figs/result/result_8.jpg)
-
-![result_9](/figs/result/result_9.jpg)
-
-![result_10](/figs/result/result_10.jpg)
-
-![result_11](/figs/result/result_11.jpg)
-
-![result_12](/figs/result/result_12.jpg)
-
-![result_13](/figs/result/result_13.jpg)
-
-![result_14](/figs/result/result_14.jpg)
-
-![result_15](/figs/result/result_15.jpg)
-
-![result_16](/figs/result/result_16.jpg)
-
-![result_17](/figs/result/result_17.jpg)
-
-![result_18](/figs/result/result_18.jpg)
-
-![result_19](/figs/result/result_19.jpg)
-
-![result_20](/figs/result/result_20.jpg)
-
-## NTIRE2017 SR Challenge: Unknown Down-sampling Track
-
-![unknown_1](/figs/result/unknown_1.jpg)
-
-![unknown_2](/figs/result/unknown_2.jpg)
